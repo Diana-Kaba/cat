@@ -4,19 +4,19 @@ let cat = {
   age: 2,
   weight: 3,
   feeding: function () {
-    if (cat.weight < 4) {
-      cat.weight++;
-      alert(cat.weight);
+    if (this.weight < 4) {
+      this.weight++;
+      alert(this.weight);
     } else {
-      alert(cat.weight);
+      alert(this.weight);
     }
   },
   diet: function () {
-    if (cat.weight > 4) {
-      cat.weight--;
-      alert(cat.weight);
+    if (this.weight > 4) {
+      this.weight--;
+      alert(this.weight);
     } else {
-      alert(cat.weight);
+      alert(this.weight);
     }
   },
   toString: function () {
